@@ -1,6 +1,6 @@
-resource "local_file" "Introduction" {
-    local_file = "/home/ec2-user/new_file.txt"
-    content = "Hi, my name is Joshua Joseph Jefries. I am learning Terraform"
-    file_permission = "0777"
-    directory_permission = "0777"
-}
+resource "local_file" "profile" {
+  filename = "/home/ec2-user/terraform/profile1.txt"
+  file_permission = "0777"
+  content = "Hello! My name is Joseph Jefries and I am learning terraform"
+  directory_permission = "0777"
+ }
