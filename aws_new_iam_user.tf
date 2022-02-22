@@ -8,8 +8,8 @@ terraform {
 }
 
 provider "aws" {
-    access_key = "Get_Access_key_from_account_security_credentials"
-    secret_key = "Get_Secret_key_from_account_security_credentials"
+    access_key = var.aws_access_key
+    secret_key = var.aws_secret_key
 }
 
 resource "aws_iam_user" "test1" {
