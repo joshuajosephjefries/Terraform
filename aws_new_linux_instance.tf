@@ -2,6 +2,10 @@ resource "aws_instance" "webserver" {
     ami = "${var.ami}"
     count = 1
     instance_type = "${var.type}"
+    key_name = "Key"
+    tags = {
+        Name = "Linux Instance"
+    }
 }
 
 provider "aws" {
