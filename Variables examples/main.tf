@@ -11,3 +11,7 @@ resource "local_file" "grography" {
     filename = "/home/ec2-user/terraform"
     content = var.countries_map_string["continent"] # North America
 }
+
+resource "random_pet" "my_sorting" {
+    prefix = var.countries_map_number["USA"] # 3
+}
