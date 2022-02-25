@@ -1,7 +1,7 @@
 resource "aws_instance" "webserver" {
-    ami = "${var.ami}"
+    ami = var.linuxami
     count = 1
-    instance_type = "${var.type}"
+    instance_type = var.type
     key_name = "Key"
     tags = {
         Name = "Linux Instance"
@@ -10,7 +10,7 @@ resource "aws_instance" "webserver" {
 
 provider "aws" {
     alias = "aws_new"
-    access_key = var.aws_access_key 
+    access_key = var.aws_access_key
     secret_key = var.aws_secret_key
     region = var.region
 }
