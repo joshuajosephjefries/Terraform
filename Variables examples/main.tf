@@ -29,3 +29,10 @@ resource "random_pet" "countries_tuple" {
 resource "random_pet" "countries_object" {
     prefix = var.my_object["name"]
 }
+
+resource "random_pet" "countries_count_user_input" {
+    prefix = var.count_no
+}
+resource "random_pet" "G7_leader" {
+    prefix = var.country
+}
