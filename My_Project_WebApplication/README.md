@@ -18,7 +18,7 @@
         - MariaDB: To store the values of the website
   </h4>
 
-  <h3> How? </h3>
+  <h3> HOW? </h3>
   <h4>
     This project involves provisioning of infrastructure using Terraform that involves the following steps:
 
@@ -26,8 +26,9 @@
         - Creating a subnet for the created VPC
         - Creating a security group
         - Creating an EC2 instance with an elastic IP provisioned within the created subnet and security group
-        - Creating an Internet gateway attached to the VPC to enable internet access from EC2 instance
-    
+        - Creating an Internet gateway attached to the VPC to enable internet access from EC2 instance.
+  </h4>
+  <h4>
     This project also involves installation of the following within the EC2 instance:
 
         - webserver (nginx)
@@ -35,6 +36,8 @@
         - MariaDB (for storage purposes)
   </h4>
 
-  <h3> End Result </h3>
+  <h3> END RESULT </h3>
+  <h4>
     Creates a web application that takes in the input details of the end-user and stores the data in the backend in Maria database.
+  </h4>
 </body>
