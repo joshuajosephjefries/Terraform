@@ -12,6 +12,7 @@
   <h3> PROJECT OVERVIEW </h3>
   <h4>
     This project involves in designing a web application with AWS and host it using the various tools listed as follows:
+    
         - AWS: To setup infrastructure on cloud
         - Terraform: To create the infrastructure
         - Ansible: To deploy the configuration
