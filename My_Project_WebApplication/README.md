@@ -21,15 +21,17 @@
 
   <h3> HOW? </h3>
   <h4>
+    TERRAFORM INFRASTRUCTURE DEPLOYMENT
     This project involves provisioning of infrastructure using Terraform that involves the following steps:
 
         - Creating a VPC
         - Creating a subnet for the created VPC
         - Creating a security group
-        - Creating an EC2 instance with an elastic IP provisioned within the created subnet and security group
+        - Creating an EC2 instance with a static IP provisioned within the subnet range and security group
         - Creating an Internet gateway attached to the VPC to enable internet access from EC2 instance.
   </h4>
   <h4>
+    ANSIBLE DEPLOYMENT
     This project also involves installation of the following within the EC2 instance:
 
         - webserver (nginx)
