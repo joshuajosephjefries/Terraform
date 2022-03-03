@@ -11,6 +11,6 @@ variable "type" {
 }
 
 variable "key_name" {
-    default = "private_key"
+    default = "public_key"
     description = "Key to access EC2 instance"
 }
