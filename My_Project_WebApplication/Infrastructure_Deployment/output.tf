@@ -15,5 +15,5 @@ output "public_key" {
 
 resource "local_file" "public_key" {
     content  = tls_private_key.example.public_key_openssh
-    filename = "C:\\Users\\josep\\Desktop\\Terraform\\Terraform\\My_Project_WebApplication\\Ansible_Application_Deployment\\private_key.pem"
+    filename = "C:\\Users\\josep\\Desktop\\Terraform\\Terraform\\My_Project_WebApplication\\Ansible_Application_Deployment\\public_key.pem"
 }
