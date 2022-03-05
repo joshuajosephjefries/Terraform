@@ -10,10 +10,10 @@ resource "local_file" "my_public_ip" {
 }
 
 output "public_key" {
-    value = tls_private_key.example.public_key_openssh
+    value = tls_private_key.example.public_key_pem
 }
 
 resource "local_file" "public_key" {
-    content  = tls_private_key.example.public_key_openssh
+    content  = tls_private_key.example.public_key_pem
     filename = "/home/ec2-user/My_Project_WebApplication/Ansible_Application_Deployment/public_key.pem"
 }
