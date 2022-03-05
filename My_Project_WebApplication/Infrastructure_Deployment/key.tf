@@ -3,15 +3,14 @@
 # Instead, generate a private key file outside of Terraform and distribute it securely to the system where Terraform will be run.
 # As per https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key
 
-data "tls_public_key" "example" {
+resource "tls_private_key" "example" {
   algorithm = "RSA"
-  rsa_bits  = 2048
+  rsa_bits  = 4096
 }
 
-data "aws_key_pair" "generated_key" {
+resource "aws_key_pair" "generated_key" {
   key_name   = var.key_name
-  public_key = tls_public_key.example.public_key_pem
-  # private_key = tls_public_key.example.private_key_pem
+  public_key = tls_private_key.example.public_key_openssh
   tags ={
       Name = "Application-key"
       createdBy = "JoshuaJosephJefries"
