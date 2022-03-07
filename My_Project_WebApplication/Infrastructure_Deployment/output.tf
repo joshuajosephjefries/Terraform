@@ -23,10 +23,16 @@ output "private_key" {
     sensitive = true
 }
 
-# Change path for your specific OS
+# Change path for your specific OS. 
+# This would save the private key in the path specified so as to access created App instance using Putty SSH
+
 resource "local_file" "private_key" {
     content  = tls_private_key.example.private_key_pem
     filename = "C:\\Users\\josep\\Desktop\\private_key.pem"
+ tags ={
+      Name = "Application-key"
+      createdBy = "JoshuaJosephJefries"
+      }
 }
 
 
