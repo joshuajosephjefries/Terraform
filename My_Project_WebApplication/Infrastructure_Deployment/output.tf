@@ -6,7 +6,7 @@ output "vm_public_ip" {
 
 resource "local_file" "my_public_ip" {
     content  = aws_eip.my_elastic_ip.public_ip
-    filename = "/home/ec2-user/My_Project_WebApplication/Ansible_Application_Deployment/my_ip.txt"
+    filename = "/home/ec2-user/Terraform/My_Project_WebApplication/Ansible_Application_Deployment/my_ip.txt"
 }
 
 output "public_key" {
