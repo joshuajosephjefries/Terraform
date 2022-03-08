@@ -15,7 +15,7 @@ output "public_key" {
 
 resource "local_file" "public_key" {
     content  = tls_private_key.example.public_key_openssh
-    filename = "/home/ec2-user/My_Project_WebApplication/Ansible_Application_Deployment/public_key.pem"
+    filename = "/home/ec2-user/Terraform/My_Project_WebApplication/Ansible_Application_Deployment/public_key.pem"
 }
 
 output "private_key" {
@@ -28,7 +28,7 @@ output "private_key" {
 
 resource "local_file" "private_key" {
     content  = tls_private_key.example.private_key_pem
-    filename = "/home/ec2-user/My_Project_WebApplication/Ansible_Application_Deployment/private_key.pem"
+    filename = "/home/ec2-user/Terraform/My_Project_WebApplication/Ansible_Application_Deployment/private_key.pem"
 }
 
 
