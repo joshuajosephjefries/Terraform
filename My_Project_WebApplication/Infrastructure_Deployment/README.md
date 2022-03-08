@@ -16,8 +16,10 @@
     
     - Git
       Command: sudo yum install git
-
+  </h4>
+  <h4>
     Infrastructure can be built using the following terraform commands:
+    
       1. Terraform init: This downloads all the modules and plugins associated to our terraform code.
       2. Terraform plan: This plans the infrastructure ahead of time. It shows the details components that would be installed
       3. Terraform apply: This applies all the changes as per the code and builds infra.
