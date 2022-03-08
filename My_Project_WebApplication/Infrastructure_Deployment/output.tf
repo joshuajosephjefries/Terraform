@@ -29,10 +29,6 @@ output "private_key" {
 resource "local_file" "private_key" {
     content  = tls_private_key.example.private_key_pem
     filename = "C:\\Users\\josep\\Desktop\\private_key.pem"
- tags ={
-      Name = "Application-key"
-      createdBy = "JoshuaJosephJefries"
-      }
 }
 
 
