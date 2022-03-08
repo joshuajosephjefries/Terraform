@@ -20,10 +20,10 @@
     # # PHP
     - name: Installing PHP
       command: "{{item}}"
-        loop:
-          - yum install php && yum install php-common && yum install php-cli
-          - yum install php-curl && yum install php-gd && yum install php-mysql
-          - yum install php-fpm
+      loop:
+        - yum install php && yum install php-common && yum install php-cli
+        - yum install php-curl && yum install php-gd && yum install php-mysql
+        - yum install php-fpm
     - name: Copy PHP conf files to a specific folder
       copy:
         src: "./files/php.conf"
