@@ -1,0 +1,13 @@
+[
+	{
+		"name": "TestApp",
+		"host": "ec2-3-94-180-134.compute-1.amazonaws.com",
+		"port": 22,
+		"type": "sftp",
+		"username": "ec2-user",
+		"privateKey": "C:\\Users\\josep\\Downloads\\My_Key.ppk",
+		"path": "/home/ec2-user",
+		"autosave": true,
+		"confirm": true
+	}
+]
