@@ -1,5 +1,6 @@
 <DOCTYPE!=HTML>
 <body>
+  <h3> RULE: Make sure that the server and the appec2instance are on the same vpc and subnet </h3>
   <h3> STEPS FOR ESTABLISHING SSH CONNECTION </h3>
   <h4>
 
