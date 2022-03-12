@@ -18,11 +18,15 @@
 
     Step 1: Install Ansible on AWS instance 
             sudo amazon-linux-extras install -y ansible2
-    Step 2: Git clone the repository
+    Step 2: Install Lynx
+            yum install lynx
+    Step 3: Git clone the repository
             git clone https://github.com/joshuajosephjefries/Terraform.git
-    Step 3: Go to /home/ec2-instance/My_Project_WebPage/Ansible_WebPage_Deployment
-    Step 4: Run the ansible playbook 
+    Step 4: Go to /home/ec2-instance/My_Project_WebPage/Ansible_WebPage_Deployment
+    Step 5: Run the ansible playbook 
             ansible-playbook -i inventory.yaml main.yaml
+    Step 6: After running playbook, go to App-EC2_Instance and check webpage
+            lynx http://172.48.15.15
   </h4>
 </body>
   
