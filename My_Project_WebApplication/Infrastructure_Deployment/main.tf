@@ -4,7 +4,7 @@ resource "aws_instance" "app_ec2_instance" {
     subnet_id = module.vpc.public_subnets[0]
     vpc_security_group_ids = [aws_security_group.project-sg.id]
     key_name = aws_key_pair.generated_key.key_name
-    private_ip = "172.48.15.15"
+    private_ip = "192.168.15.15"
     tags = {
         Name = "App-EC2_Instance"
         createdBy = "JoshuaJosephJefries"
