@@ -16,6 +16,7 @@
   <h3> RUNNING THE CODE </h3>
   <h4>
 
+    
     Step 1: Install Ansible on AWS instance 
             sudo amazon-linux-extras install -y ansible2
     Step 2: Install Lynx
