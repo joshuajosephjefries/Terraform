@@ -1,6 +1,7 @@
 all:
   hosts:
-    172.48.15.15:
+    192.168.15.15:
       ansible_user: ec2-user
       ansible_connection: ssh
       ansible_port: 22
+      
