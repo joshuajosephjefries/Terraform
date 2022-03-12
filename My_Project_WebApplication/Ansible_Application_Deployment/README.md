@@ -13,20 +13,11 @@
     Step 5: Try checking the connection for ssh
             Command: ssh ec2-user@IP_address_of_AppEC2Instance
   </h4>
-  <h3> STEPS FOR ADDING THE APP_EC2_INSTANCE HOST DETAILS ON SERVER </h3>
+  <h3> RUNNING THE CODE </h3>
   <h4>
-    The following steps are to be followed to add the host details on the server:
-
-    - Go to /etc/ansible/hosts and enter the localhost details. 
-    - Localhost details are the server details
-    - These details have to contain name, ansible_host (Server private IP address), ansible_user, ansible_connection, ansible_port
-    
-  </h4>
-  <p>
-    [localhost]
-  </p>
-  <p>
-    local ansible_host=172.31.88.148 ansible_user=ec2-user ansible_connection=ssh ansible_port=22
-  </p>
+    Step 1: Install Ansible on AWS instance (sudo amazon-linux-extras install -y ansible2)
+    Step 2: Git clone the repository: (git clone https://github.com/joshuajosephjefries/Terraform.git)
+    Step 3: Go to /home/ec2-instance/My_Project_WebPage/Ansible_WebPage_Deployment
+    Step 4: Run the ansible playbook (ansible-playbook -i inventory.yaml main.yaml)
 </body>
   
