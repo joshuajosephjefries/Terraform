@@ -50,7 +50,7 @@ body {
     background-image:url('https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/terraform-x-aws-1.png');
     background-size: cover;
     width:80%;
-    height:450px;
+    height:500px;
 }
 .button1 {
     background-color: transparent;
@@ -105,7 +105,7 @@ body {
     </head>
     <body>
         <div class="topnav">
-            <a href="index.php">User inventory</a>
+            <a href="index.php">Application for User Inventory</a>
           </div>
 
 
