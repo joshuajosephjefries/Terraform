@@ -27,7 +27,7 @@
     Step 5: Run the ansible playbook 
             ansible-playbook -i inventory.yaml main.yaml
     Step 6: After running playbook, go to App-EC2_Instance and check webpage
-            lynx http://172.48.15.15
+            lynx http://192.168.15.15
   </h4>
 </body>
   
