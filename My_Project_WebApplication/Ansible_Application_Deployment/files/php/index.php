@@ -11,7 +11,7 @@ body {
     background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   /*background-color:rgba(43, 3, 3, 0.945);*/
-  
+
 }
 .topnav {
   overflow: hidden;
@@ -32,7 +32,7 @@ body {
   float: right;
 }
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #800080; /* Purple */
     border: none;
     color: white;
     padding: 16px 32px;
@@ -47,10 +47,10 @@ body {
 }
 .screen
 {
-    background-image:url('users.jpeg');
+    background-image:url('https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/terraform-x-aws-1.png');
     background-size: cover;
-    width:100%;
-    height:600px;
+    width:80%;
+    height:450px;
 }
 .button1 {
     background-color: transparent;
@@ -64,7 +64,7 @@ body {
 }
 .button2 {
     background-color:  transparent;
-    color: black; 
+    color: black;
     border-radius: 5px;
     border: 3px solid rgba(31, 58, 147, 1);
 }
@@ -73,8 +73,8 @@ body {
     color: white;
 }
 .button3 {
-    background-color:transparent; 
-    color: white; 
+    background-color:transparent;
+    color: white;
     border-radius: 5px;
     border: 3px solid #f44336;
 }
@@ -107,16 +107,17 @@ body {
         <div class="topnav">
             <a href="index.php">User inventory</a>
           </div>
-      
-       
-     <div class="screen">      
+
+
+          <div class="screen">
      <form>
-          
+
             <button class="button button1"  type="submit" formaction="addUser.php">Add user</button>
             <button class="button button2"  type="submit" formaction="searchUser.php">Search user</button>
-        
-     </form> 
+
+     </form>
     </div>
     </body>
-   
+
 </html>
+
