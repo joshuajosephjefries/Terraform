@@ -122,7 +122,7 @@ body {
     </div>
 
     <div class="right">
-        <a CreatedBy: href="https://github.com/joshuajosephjefries"> @JoshuaJosephJefries</a>
+        <a href="https://github.com/joshuajosephjefries"> CreatedBy: @JoshuaJosephJefries</a>
     </div>
 
     <div class="right">
