@@ -1,6 +1,6 @@
 ---
 - name: To install nginx, PHP, and MariaDB
-  hosts: 172.48.15.15
+  hosts: 192.168.15.15
   become: yes
   become_user: root
   tasks:
