@@ -101,15 +101,18 @@ body {
     background-color:#8d2663;
     color: white;
 }
+.right {
+    text-align: right;
+}
 </style>
     </head>
     <body>
         <div class="topnav">
-            <a href="index.php">Application for User Inventory</a>
+            <a href="index.php">"Application for User Inventory"</a>
           </div>
 
 
-          <div class="screen">
+     <div class="screen">
      <form>
 
             <button class="button button1"  type="submit" formaction="addUser.php">Add user</button>
@@ -117,7 +120,17 @@ body {
 
      </form>
     </div>
+
+    <div class="right">
+        <a CreatedBy: href="https://github.com/joshuajosephjefries"> @JoshuaJosephJefries</a>
+    </div>
+
+    <div class="right">
+      <meta charset="UTF-8">
+      <p style="font-size:48px">
+        &#128512
+      </p>
+    </div>
     </body>
 
 </html>
-
