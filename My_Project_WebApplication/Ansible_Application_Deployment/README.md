@@ -13,7 +13,7 @@
     Step 5: Try checking the connection for ssh
             Command: ssh ec2-user@IP_address_of_AppEC2Instance
   </h4>
-  <h3> RUNNING THE CODE </h3>
+  <h3> RUNNING THE WEB_APP_MAIN CODE </h3>
   <h4>
 
     
@@ -27,7 +27,8 @@
     Step 5: Run the ansible playbook 
             ansible-playbook -i inventory.yaml main.yaml
     Step 6: After running playbook, go to App-EC2_Instance and check webpage
-            lynx http://192.168.15.15
+            lynx http://192.168.15.15 -> From the server
+            Use the VM public IP of the APP-EC2_Instance in any browser. Ex: http://3.212.95.121/
   </h4>
 </body>
   
