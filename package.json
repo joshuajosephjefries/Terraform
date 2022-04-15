@@ -27,3 +27,7 @@
   },
   "homepage": "https://github.com/joshuajosephjefries/Terraform#readme"
 }
+
+"publishConfig": {
+   "@joshuajosephjefries:registry": "https://npm.pkg.github.com"
+ }
