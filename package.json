@@ -1,0 +1,29 @@
+{
+  "name": "terraform",
+  "version": "1.0.0",
+  "description": "Terraform scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "terraform -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuajosephjefries/Terraform.git"
+  },
+  "keywords": [
+    "terraform",
+    "init",
+    "terraform",
+    "plan",
+    "terraform",
+    "apply",
+    "terraform",
+    "show"
+  ],
+  "author": "joshuajosephjefries",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/joshuajosephjefries/Terraform/issues"
+  },
+  "homepage": "https://github.com/joshuajosephjefries/Terraform#readme"
+}
