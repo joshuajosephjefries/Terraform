@@ -2,7 +2,7 @@
 
 # Terraform
 
-/* Terraform is an IaC software that we used to use to write, plan and apply the code for configuration and deployment of applications.
+Terraform is an IaC software that we used to use to write, plan and apply the code for configuration and deployment of applications.
 
 You can deploy, release, scale, and monitor the applications in real time across multiple cloud providers.
 
@@ -145,4 +145,4 @@ Plugins for Atom:
 
     Terraform-fmt
     Terminus- https://atom.io/packages/terminus
-    FTP */
+    FTP
