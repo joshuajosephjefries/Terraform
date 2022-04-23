@@ -1,4 +1,4 @@
-![image](![image](https://user-images.githubusercontent.com/79646955/164879518-d6fc813e-7df5-4a4b-8f83-5b0f4919f46e.png)
+![image](https://user-images.githubusercontent.com/79646955/164879518-d6fc813e-7df5-4a4b-8f83-5b0f4919f46e.png)
 
 
 # Terraform
