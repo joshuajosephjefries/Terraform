@@ -183,13 +183,13 @@ In the above example, resource is the block name, local_file is the resource typ
 patriot is the resource name. Resource name can be anything.
 We give arguments inside the curly braces.
 
->> Step1: Write the configuration file
->> Step2: Terraform init: It installs the dependencies. For the above example, it would install hashicorp/local v2.1.0
->> Step3: Terraform validate
->> Step4: Terraform plan
->> Step4: Terraform apply
->> Step5: Terraform show
->> Step6: Terraform destroy
+<br> Step1: Write the configuration file
+<br> Step2: Terraform init: It installs the dependencies. For the above example, it would install hashicorp/local v2.1.0
+<br> Step3: Terraform validate
+<br> Step4: Terraform plan
+<br> Step4: Terraform apply
+<br> Step5: Terraform show
+<br> Step6: Terraform destroy
 
 Plugins for Atom:
 
