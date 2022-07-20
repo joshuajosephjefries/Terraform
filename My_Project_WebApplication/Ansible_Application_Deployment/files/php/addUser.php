@@ -102,13 +102,14 @@ $country = $_POST["country"];
 
 $sql = "INSERT INTO users(firstName,lastName,email,city,country)
 VALUES ('$firstName','$lastName','$email','$city','$country')";
-if ($conn->multi_query($sql) == TRUE) {
+if ($conn->multi_query($sql)) {
   echo'<div>
   <h1 style="color:#f2f2f2;font-size:20px; font-family: "Roboto", sans-serif;margin:auto;">New record inserted successfully</h1>
      </div>';
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+doSomething(true);
 
 $conn->close();
 }
