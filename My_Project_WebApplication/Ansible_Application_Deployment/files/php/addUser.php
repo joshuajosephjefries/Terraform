@@ -94,14 +94,19 @@ if ($conn->connect_error) {
 
 
 $firstName = $_POST["firstName"];
+$safefirstName = htmlspecialchars($firstName);
 $lastName = $_POST["lastName"];
+$safelastName = htmlspecialchars($lastName);
 $email= $_POST["email"];
+$safeemail = htmlspecialchars($email);
 $city = $_POST["city"];
+$safecity = htmlspecialchars($city);
 $country = $_POST["country"];
+$safecountry = htmlspecialchars($country);
 
 
 $sql = "INSERT INTO users(firstName,lastName,email,city,country)
-VALUES ('$firstName','$lastName','$email','$city','$country')";
+VALUES ('$safefirstName','$safelastName','$safeemail','$safecity','$safecountry')";
 if ($conn->multi_query($sql)) {
   echo'<div>
   <h1 style="color:#f2f2f2;font-size:20px; font-family: "Roboto", sans-serif;margin:auto;">New record inserted successfully</h1>
