@@ -112,7 +112,8 @@ if(mysqli_num_rows($var)>0){
     <td>$arr[3]</td>
     <td>$arr[4]</td>
     <td>$arr[5]</td>
-    </tr>";}
+    </tr>";
+    }
     echo "</table>";
     mysqli_free_result($var);
 } else {
