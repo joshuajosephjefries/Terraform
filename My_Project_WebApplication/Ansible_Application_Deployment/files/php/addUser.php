@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" xml:lang="en">
 <head>
         <title>Users </title>
         <style>
