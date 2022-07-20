@@ -89,10 +89,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$city = $_POST["city"];
+$safecity = $_POST["city"];
 
 
-$sql = "SELECT * FROM users WHERE city = '$city'";
+$sql = "SELECT * FROM users WHERE city = '$safecity'";
 $var=mysqli_query($conn,$sql);
 echo "<table border size=10 color=white font_color=white>";
 echo "<tr>
