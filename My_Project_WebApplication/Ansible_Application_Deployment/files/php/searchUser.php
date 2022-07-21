@@ -64,6 +64,7 @@ border: 3px solid #3333ff;background-color:rgba(44, 130, 201, 1);color:#f2f2f2;f
 </form>  
 <form method="post" action="searchUser.php">  
 <fieldset>
+   <legend>Action to Search user</legend>
    <input type="text" name="city" placeholder="City"  style="width:100%;height:30px;
    border: 2px solid  rgba(44, 130, 201, 1); border-radius:3px;  background:transparent;">
   <br><br>
