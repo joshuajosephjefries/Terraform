@@ -79,12 +79,12 @@ if(isset($_POST["submit"]))
 {
  // define variables and set to empty values
 $servername = "localhost";
-$username = "user_manager";
-$password = "Qwerty123";
+$username = getUsername(); #user_manager
+$pass = getPassword(); #Qwerty123
 $dbname = "user_inventory";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $pass, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
