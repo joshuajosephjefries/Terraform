@@ -1,4 +1,5 @@
 resource "aws_instance" "app_ec2_instance" {
+    associate_public_ip_address = false
     ami = var.my_ami
     instance_type = var.type
     subnet_id = module.vpc.public_subnets[0]
