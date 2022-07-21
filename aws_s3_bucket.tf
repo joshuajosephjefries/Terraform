@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "jjefries" {
 }
 
 resource "aws_s3_bucket_public_access_block" "public-access-block" {
-  bucket = aws_s3_bucket.example.id
+  bucket = aws_s3_bucket.jjefries.id
 
   block_public_acls       = true
   block_public_policy     = true
@@ -54,12 +54,9 @@ resource "aws_s3_object" "jjefries-bucket1" {
     key = "profile.txt"
 }
 
-resource "aws_s3_bucket_acl" "jjefries-bucket1-acl" {
-  bucket = aws_s3_bucket.jjefries.id # Equal to "jjefries_bucket"
-  acl    = "authenticated-read"
   # acl = private -> Owner gets FULL_CONTROL. No one else has access rights (default)
   # acl = public-read -> Owner gets FULL_CONTROL. Others get READ access
   # acl = public-read-write -> Owner gets FULL_CONTROL. Others get READ and WRITE access. Not recommended
   # acl = aws-exec-read -> Owner gets FULL_CONTROL. AWS EC2 gets READ access to GET the AMI bundle from amazon S3
   # acl = authenticated-read -> Owner gets FULL_CONTROL. Authenticated user gets READ access
-}
+
