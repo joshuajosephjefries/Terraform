@@ -1,4 +1,5 @@
 resource "aws_instance" "webserver" {
+    associate_public_ip_address = false
     ami = var.linuxami
     count = 1
     instance_type = var.type
