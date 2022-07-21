@@ -36,6 +36,7 @@ resource "aws_security_group" "WindowsRDPSecurityGroup" {
 }
 
 resource "aws_instance" "windowsserver" {
+    associate_public_ip_address = false
     ami = var.windowsami
     count = 1
     instance_type = var.type
