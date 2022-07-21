@@ -93,7 +93,7 @@ if ($conn->connect_error) {
 $safecity = $_POST["city"];
 
 
-$sql = "SELECT * FROM users WHERE city = '$safecity'";
+$sql = "SELECT * FROM users WHERE login = :username AND pass = :password AND city = '$safecity'";
 $var=mysqli_query($conn,$sql);
 echo "<table border size=10 color=white font_color=white>";
 echo "<tr>
