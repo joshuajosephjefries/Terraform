@@ -90,10 +90,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$safecity = $_POST["city"];
+$city = $_POST["city"];
+$safecity = htmlspecialchars($firstName);
 
 
-$sql = "SELECT * FROM users WHERE login = :username AND pass = :password";
+$sql = "SELECT * FROM users WHERE login = :username AND pass = :password AND city =:safecity";
 $var=mysqli_query($conn,$sql);
 echo "<table border size=10 color=white font_color=white>";
 echo "<tr>
